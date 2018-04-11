@@ -25,13 +25,6 @@
 
 #include <dirent.h>
 
-/* ToDo:
- *
- * - improve lame (16bit) performance
- * - handle != 16bit data
- * - remove hexdump code
- */
-
 static std::string baseDir;
 
 std::shared_ptr<ConcurrentQueue<std::string>> scan_base_dir(const std::string& path)

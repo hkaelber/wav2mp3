@@ -32,7 +32,7 @@ private:
     pthread_t pthread;
 
 public:
-    explicit EncoderThread(std::shared_ptr<ConcurrentQueue<std::string>> q);
+    explicit EncoderThread(const std::shared_ptr<ConcurrentQueue<std::string>>& q);
     ~EncoderThread() = default;
 
     static void* thread(void* userData);

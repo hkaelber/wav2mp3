@@ -21,7 +21,7 @@
 
 #include <cinttypes>
 
-EncoderThread::EncoderThread(std::shared_ptr<ConcurrentQueue<std::string>> q)
+EncoderThread::EncoderThread(const std::shared_ptr<ConcurrentQueue<std::string>>& q)
     : queue(q)
 {
 }
